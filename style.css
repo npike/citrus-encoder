@@ -20,6 +20,16 @@ body {
     max-width: 450px;
 }
 
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
 h1 {
     color: #333;
     font-size: 2em;
@@ -73,5 +83,5 @@ button:hover {
 #result a {
     color: #007bff;
     text-decoration: none;
-    word-break: break-all; /* Ensures the link breaks correctly on small screens */
+    word-break: break-all;
 }
