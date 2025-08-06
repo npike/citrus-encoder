@@ -1,6 +1,6 @@
 function createLink() {
     const phoneNumber = document.getElementById('phoneNumber').value;
-    const second_site_url = 'https://npike.github.io/citrus-encoder/index.html';
+    const second_site_url = 'https://npike.github.io/citrus-phone/index.html';
 
     if (phoneNumber) {
         // Base64 encode the phone number
