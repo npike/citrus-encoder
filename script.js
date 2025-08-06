@@ -1,6 +1,6 @@
 function createLink() {
     const phoneNumber = document.getElementById('phoneNumber').value;
-    const second_site_url = 'https://your-second-site-bucket.s3.amazonaws.com/index.html'; // Replace with your S3 URL for the second site
+    const second_site_url = 'https://npike.github.io/citrus-encoder/index.html';
 
     if (phoneNumber) {
         // Base64 encode the phone number
