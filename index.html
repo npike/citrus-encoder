@@ -2,15 +2,19 @@
 <html>
 <head>
     <title>Phone Number Encoder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Phone Number Encoder</h1>
-    <label for="phoneNumber">Enter Phone Number:</label>
-    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="e.g., 555-123-4567">
-    <button onclick="createLink()">Create Link</button>
-    <br><br>
-    <div id="result"></div>
-
+    <div class="container">
+        <h1>Create a Link</h1>
+        <p>Enter a phone number to generate a shareable link.</p>
+        <div class="input-group">
+            <input type="tel" id="phoneNumber" placeholder="e.g., 555-123-4567">
+            <button onclick="createLink()">Create Link</button>
+        </div>
+        <div id="result"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
