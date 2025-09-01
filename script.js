@@ -1,13 +1,17 @@
 function createLink() {
-    const phoneNumber = document.getElementById('phoneNumber').value;
-    const second_site_url = 'https://npike.github.io/citrus-phone/index.html';
+    const phoneNumber1 = document.getElementById('phoneNumber').value;
+    const phoneNumber2 = document.getElementById('phoneNumber2').value;
+    const second_site_url = 'https://citrusnfc.pikepalooza.com';
 
-    if (phoneNumber) {
+    if (phoneNumber1) {
         // Base64 encode the phone number
-        const encodedNumber = btoa(phoneNumber);
+        const encodedNumber1 = btoa(phoneNumber1);
+        let linkURL = `${second_site_url}?phone=${encodedNumber1}`;
 
-        // Construct the full URL with the query parameter
-        const linkURL = `${second_site_url}?phone=${encodedNumber}`;
+        if (phoneNumber2) {
+            const encodedNumber2 = btoa(phoneNumber2);
+            linkURL += `&phone2=${encodedNumber2}`;
+        }
 
         // Display the link to the user
         const resultDiv = document.getElementById('result');
