@@ -1,7 +1,7 @@
 function createLink() {
     const phoneNumber1 = document.getElementById('phoneNumber').value;
     const phoneNumber2 = document.getElementById('phoneNumber2').value;
-    const second_site_url = 'https://citrusnfc.pikepalooza.com';
+    const second_site_url = 'https://www.tapforemergencycontact.com/';
 
     if (phoneNumber1) {
         // Base64 encode the phone number
